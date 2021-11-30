@@ -1,0 +1,84 @@
+/* Position and size our burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    left: 32px;
+    top: 32px;
+}
+
+/* Color to our burger */
+.bm-burger-bars {
+    background: black;
+}
+
+/* Color to our burger icon on hover */
+.bm-burger-bars-hover {
+    background: #022144;
+}
+
+/* Size of the cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color of cross button */
+.bm-cross {
+    background: #fff;
+}
+
+
+/* Sidebar wrapper styles */
+.bm-menu-wrap {
+    position: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+}
+
+.bm-menu {
+    /* background: #355C7D;
+    background: -webkit-linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D); 
+    background: linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D); */
+    background: linear-gradient(39.97deg, #03d6f3 0.79%, #458ff6 79.29%);
+    padding: 2.5em 1.5em 0 0;
+    height: 100vh;
+    overflow: hidden !important;
+}
+
+.bm-item-list {
+    padding: 0.8em;
+}
+
+.menu-item {
+    position: relative;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.menu-item:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.active-item {
+    font-weight: 500;
+}
+
+.menu-item:hover:before,
+.active-item:before {
+    visibility: visible;
+    height: 3px;
+}
